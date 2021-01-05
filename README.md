@@ -1,8 +1,16 @@
 # Script
 
+
+
   
 
+
+
 Usually when a computer executes a program, this program first came from a compilation pipeline and what we execute in our computer is an instantiation of the generated binary. Exactly the same instructions and exactly the same behavior are executed in the client computers. In a world scale, we have several million binaries copies distributed to the clients. This phenomenom is called "Software monoculture".
+
+
+
+
 
 
 
@@ -10,19 +18,31 @@ Software monoculture has several benefits, such as maintenance, interroperabilit
 
 
 
-How can we mitigate tis threat ? If we distribute a different binary, yet with the same functionality, we can break potential attacks. For example, if we distribute different instructions making the same functionality of the orginal program, signature based attacks could be ineffective. The main limitation of this technique is that you need to scale the number of different variants to a real world scale as fast as a potential attacker can analyze and discover new flaws. Besides, you need to take care about creating new vulnerabilities. The programs generation needs to be safe and sound. We call this defense technique, "Software Diversification"
+
+
+
+
+How can we mitigate this threat ? If we distribute a different binary, yet with the same functionality, we can break potential attacks. For example, if we distribute different instructions making the same functionality of the orginal program, signature based attacks could be ineffective. The main limitation of this technique is that you need to scale the number of different variants to a real world scale as fast as a potential attacker can analyze and discover new flaws. Besides, you need to take care about creating new vulnerabilities. The programs generation needs to be safe and sound. We call this defense technique, "Software Diversification"
 
 
 
 
 
-The web context is probably the greatest example of what a monoculture is. Every time you load a page, this page contains the same resources gathered from a server. All of them are executed the same way with the same expected functionality. In 2017 a new language was added to this context, WebAssembly. WebAssembly is meant to be used as a fast language, fast enough to have native performance in the web. In fact, the community is growing ots adoption and several languages and frameworks are being migrated to WebAssembly. For example, C, C++, Go and Rust or  QEmu and Blazor.  It is also meant to be safe, but recent works showed that WebAssembly is not exempt of vulnerabilities. 
 
 
 
-Our approach is to tackle, yet undiscovered, potential vulnerabilities, by providing several WebAssembly variants given a program source code. We created a tool, that replaces equivalent code in different parts of the original program. The generated programs are different and provide functionally equivalence.
 
 
 
-Going back to how the Web works, every time that a client that ask for a WebAssembly program, we serve a different variant. This is the goal of our approach. To provide software diversiy to the web through WebAssembly diversification.
+The web context is probably the greatest example of what a monoculture is. Every time you load a page, this page contains the same resources gathered from a server. All of them are executed the same way with the same expected functionality. In 2017 a new language was added to this context, WebAssembly. WebAssembly is meant to be used as a fast language, fast enough to have native performance in the web.  It is also meant to be safe, but recent works showed that WebAssembly is not exempt of vulnerabilities. 
+
+The software community is growing its adoption and several languages and frameworks are being migrated to WebAssembly.  C, C++, Go and Rust code can be compiled to WebAssembly.  We created a tool, that replaces equivalent code in different parts of the original program during the compilation stage. Our approach is to tackle, yet undiscovered, potential vulnerabilities, by providing several WebAssembly variants given a program source code. As a result, the generated programs are statically different and functionally equivalent. 
+
+
+
+
+
+
+
+Going back to how the Web works, every time that a client ask for a WebAssembly program, we serve a different variant. The variants that we serve, are statically different hardening the static analysis of the WebAssembly binaries. We also ensure to leave different fingerprints on the execution environment traces. This is the goal of our approach. To provide software diversiy to the web through WebAssembly diversification.
 
