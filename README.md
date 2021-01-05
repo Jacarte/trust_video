@@ -1,7 +1,5 @@
 # Script
 
-# Script
-
   
 
 Usually when a computer executes a program, this program first came from a compilation pipeline and what we execute in our program is an instantiation of the generated binary. Exactly the same instructions and exactly the same behavior are executed in the client computers. In a world scale, we have several equal million instances distributed to the clients. We call this "Software monoculture".
@@ -18,11 +16,13 @@ How can we mitigate tis threat ? If we distribute a different binary, yet with t
 
 
 
-The web context is probably the greatest example of what a monoculture is. Every time you load a page, this page contains the same resources gathered from a server. All of them are executed the same way with the same expected functionality. In 2017 a new language was added to this context, WebAssembly. WebAssembly is meant to be used as a fast language, fast enough to have native performance in the web. In fact, the community is growing ots adoption and several languages and frameworks are being migrated to WebAssembly. For example, C, C++, Go and Rust or  QEmu and Blazor.  It is also meant to be safe, but recent works show that WebAssembly is not excempt of vulnerabilities. Our approach to tackle, yet undiscovered, porential vulnerabilities, by providing several variants of Webassembly given a program source code.
+The web context is probably the greatest example of what a monoculture is. Every time you load a page, this page contains the same resources gathered from a server. All of them are executed the same way with the same expected functionality. In 2017 a new language was added to this context, WebAssembly. WebAssembly is meant to be used as a fast language, fast enough to have native performance in the web. In fact, the community is growing ots adoption and several languages and frameworks are being migrated to WebAssembly. For example, C, C++, Go and Rust or  QEmu and Blazor.  It is also meant to be safe, but recent works show that WebAssembly is not exempt of vulnerabilities. 
+
+
+
+Our approach is to tackle, yet undiscovered, potential vulnerabilities, by providing several WebAssembly variants given a program source code. We created a tool, that replaces equivalent code in different parts of the original program. 
 
 
 
 Going back to how Web works, every client that ask for a WebAssembly program to the servers, we can serve a different variant each time. This is the goal of our approach. To provide software diversiy to the web through WebAssembly.
 
-
- 
