@@ -2,11 +2,11 @@
 
   
 
-Usually when a computer executes a program, this program first came from a compilation pipeline and what we execute in our program is an instantiation of the generated binary. Exactly the same instructions and exactly the same behavior are executed in the client computers. In a world scale, we have several equal million instances distributed to the clients. We call this "Software monoculture".
+Usually when a computer executes a program, this program first came from a compilation pipeline and what we execute in our program is an instantiation of the generated binary. Exactly the same instructions and exactly the same behavior are executed in the client computers. In a world scale, we have several million instances, that are equal, distributed to the clients. We call this "Software monoculture".
 
 
 
-Software monoculture has several benefits, such as maintenance, interroperability and certifications since you only need to make the changes to your application once and then distribute the binary. However, when you distribute the same binary along all your computers, you are also distribution unknown security flaws. A potential attacker can analyze this code, discover theese flaws and then create and attack. And following the same idea, the attack can be delivered to the million deployed instances, exfiltrating data, for example. To this kind of attacks, we called "Break once Break everywhere".
+Software monoculture has several benefits, such as maintenance, interroperability and certifications since you only need to make the changes to your application one time and then distribute the binary. However, when you distribute the same binary along all your computers, you are also distribution unknown security flaws. A potential attacker can analyze this code, discover theese flaws and then create and attack. And following the same idea, the attack can be delivered to the million deployed instances, exfiltrating data, for example. To this kind of attacks, we called "Break once Break everywhere".
 
 
 
