@@ -24,5 +24,5 @@ Our approach is to tackle, yet undiscovered, potential vulnerabilities, by provi
 
 
 
-Going back to how Web works, every client that ask for a WebAssembly program to the servers, we can serve a different variant each time. This is the goal of our approach. To provide software diversiy to the web through WebAssembly.
+Going back to how the Web works, every client that ask for a WebAssembly program to the servers, we can serve a different variant each time. This is the goal of our approach. To provide software diversiy to the web through WebAssembly.
 
