@@ -20,9 +20,9 @@ The web context is probably the greatest example of what a monoculture is. Every
 
 
 
-Our approach is to tackle, yet undiscovered, potential vulnerabilities, by providing several WebAssembly variants given a program source code. We created a tool, that replaces equivalent code in different parts of the original program. 
+Our approach is to tackle, yet undiscovered, potential vulnerabilities, by providing several WebAssembly variants given a program source code. We created a tool, that replaces equivalent code in different parts of the original program. The generated programs are different and provide functionally equivalence.
 
 
 
-Going back to how the Web works, every client that ask for a WebAssembly program to the servers, we can serve a different variant each time. This is the goal of our approach. To provide software diversiy to the web through WebAssembly.
+Going back to how the Web works, every client that ask for a WebAssembly program, we serve a different variant each time. This is the goal of our approach. To provide software diversiy to the web through WebAssembly.
 
